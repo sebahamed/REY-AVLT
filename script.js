@@ -20,12 +20,43 @@ function calculate() {
                     return;
                 }
 
+                document.getElementById('score' + i).innerHTML = "";
+                let span = document.createElement('span');
+                span.textContent = score;
+                document.getElementById('score' + i).appendChild(span);
                 document.getElementById('T' + i + '-average').textContent = average;
                 document.getElementById('T' + i + '-SD').textContent = standard_deviation;
-                document.getElementById('T' + i + '-scoreZ').textContent = (score - average) / standard_deviation;
+                document.getElementById('T' + i + '-scoreZ').textContent = ((score - average) / standard_deviation).toFixed(2);
             }
         })
         .catch(error => {
             console.error('Error loading JSON data:', error);
         });
     }
+
+function refresh() {
+    window.location.reload();
+}
+
+function copyTable() {
+    // Get the table element by its ID
+    const table = document.getElementById('scores');
+
+    // Create a range to select the table contents
+    const range = document.createRange();
+    range.selectNode(table);
+
+    // Select the table contents
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    // Copy the selected content to the clipboard
+    document.execCommand('copy');
+
+    // Clean up the selection
+    selection.removeAllRanges();
+
+    alert('Table copied to clipboard!');
+}
+
