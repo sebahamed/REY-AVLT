@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REY Calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>REY AVLT</h1>
+
+    <div id="container">
+        <div>
+            <p>Enter the child's age: </p>
+            <input type="number" name="" id="age">
+            <p id="age-error">Invalid Age</p>
+        </div>
+        <div>
+            <input type="radio" id="female" name="gender" value="female">Female
+            <input type="radio" id="male" name="gender" value="male">Male
+        </div>
+    </div>
+
+    <table id="scores">
+        <tr>
+            <th>Task</th>
+            <th>Remembered Words</th>
+            <th>Average</th>
+            <th>Standard Deviation</th>
+            <th>Score Z</th>
+        </tr>
+        <tr>
+            <td>First Trial</td>
+            <td>
+                <input type="number" id="T1"> 
+                <p class="error" id="T1-error">Invalid Score</p>
+            </td>
+            <td><span id="T1-average"></span></td>
+            <td><span id="T1-SD"></span></td>
+            <td><span id="T1-scoreZ"></span></td>
+        </tr>
+        <tr>
+            <td>Second Trial</td>
+            <td>
+                <input type="number" id="T2">
+                <p class="error" id="T2-error">Invalid Score</p>
+            </td>
+            <td><span id="T2-average"></span></td>
+            <td><span id="T2-SD"></span></td>
+            <td><span id="T2-scoreZ"></span></td>
+        </tr>
+        <tr>
+            <td>Third Trial</td>
+            <td>
+                <input type="number" id="T3">
+                <p class="error" id="T3-error">Invalid Score</p>
+            </td>
+            <td><span id="T3-average"></span></td>
+            <td><span id="T3-SD"></span></td>
+            <td><span id="T3-scoreZ"></span></td>
+        </tr>
+        <tr>
+            <td>Fourth Trial</td>
+            <td>
+                <input type="number" id="T4">
+                <p class="error" id="T4-error">Invalid Score</p>
+            </td>
+            <td><span id="T4-average"></span></td>
+            <td><span id="T4-SD"></span></td>
+            <td><span id="T4-scoreZ"></span></td>
+        </tr>
+        <tr>
+            <td>Fifth Trial</td>
+            <td>
+                <input type="number" id="T5">
+                <p class="error" id="T4-error">Invalid Score</p>
+            </td>
+            <td><span id="T5-average"></span></td>
+            <td><span id="T5-SD"></span></td>
+            <td><span id="T5-scoreZ"></span></td>
+        </tr>
+        <tr>
+            <td>Sixth Trial</td>
+            <td>
+                <input type="number" id="T6">
+                <p class="error" id="T6-error">Invalid Score</p>
+            </td>
+            <td><span id="T6-average"></span></td>
+            <td><span id="T6-SD"></span></td>
+            <td><span id="T6-scoreZ"></span></td>
+        </tr>
+        <tr>
+            <td>Seventh Trial</td>
+            <td>
+                <input type="number" id="T7">
+                <p class="error" id="T7-error">Invalid Score</p>
+            </td>
+            <td><span id="T7-average"></span></td>
+            <td><span id="T7-SD"></span></td>
+            <td><span id="T7-scoreZ"></span></td>
+        </tr>
+        <tr>
+            <td>Eighth Trial</td>
+            <td>
+                <input type="number" id="T8">
+                <p class="error" id="T8-error">Invalid Score</p>
+            </td>
+            <td><span id="T8-average"></span></td>
+            <td><span id="T8-SD"></span></td>
+            <td><span id="T8-scoreZ"></span></td>
+        </tr>
+    </table>
+
+    <input type="submit" onclick="calculate()">
+
+    <script src="script.js"></script>
+</body>
+</html>

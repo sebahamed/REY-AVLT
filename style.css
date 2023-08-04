@@ -1,0 +1,84 @@
+#scores {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #scores td, #scores th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #scores tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #scores tr:hover {background-color: #ddd;}
+  
+  #scores th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0497aa;
+    color: white;
+  }
+
+  input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 15%;
+    background-color: #0497aa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #47c3d3;
+  }
+  
+#container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #age-error {
+    color: red;
+    padding: 10px;
+    visibility: hidden;
+  }
+
+  .error {
+    color: red;
+    padding: 10px;
+    display: none;
+  }
