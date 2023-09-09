@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>RCFT Calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rey Complex Figure Test</h1>
+
+    <div id="container">
+        <div id="age-div">
+            <p>Enter the child's age: </p>
+            <input type="number" name="" id="age-years" placeholder="Years">
+            <input type="number" name="" id="age-months" placeholder="Months">
+            <p id="age-error">Invalid Age</p>
+        </div>
+    </div>
+
+    <table id="scores">
+        <tr>
+            <th>Z ציון</th>
+            <th>סטיית תקן</th>
+            <th>ממוצע גיל</th>
+            <th>ציון גלם</th>
+            <th>משימה</th>
+        </tr>
+        <tr>
+            <td><span id="T1-scoreZ"></span></td>
+            <td><span id="T1-SD"></span></td>
+            <td><span id="T1-average"></span></td>
+            <td id="score1">
+                <input type="number" id="T1"> 
+                <p class="error" id="T1-error">Invalid Score</p>
+            </td>
+            <td>העתקה</td>
+        </tr>
+        <tr>
+            <td><span id="T2-scoreZ"></span></td>
+            <td><span id="T2-SD"></span></td>
+            <td><span id="T2-average"></span></td>
+            <td id="score2">
+                <input type="number" id="T2">
+                <p class="error" id="T2-error">Invalid Score</p>
+            </td>
+            <td>זכירה מידית</td>
+        </tr>
+        <tr>
+            <td><span id="T3-scoreZ"></span></td>
+            <td><span id="T3-SD"></span></td>
+            <td><span id="T3-average"></span></td>
+            <td id="score3">
+                <input type="number" id="T3">
+                <p class="error" id="T3-error">Invalid Score</p>
+            </td>
+            <td>זכירה מושהית</td>
+        </tr>
+    </table>
+
+    <div id="buttons">
+        <button onclick="calculateRCFT()"><i class="fa fa-check"></i>Submit</button>
+        <button onclick="refresh()"><i class="fa fa-refresh"></i>Restart</button>
+        <button onclick="copyTable('scores')"><i class="fa fa-copy"></i>Copy</button>
+        <button onclick="menu()"><i class="fa fa-bars"></i>Menu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

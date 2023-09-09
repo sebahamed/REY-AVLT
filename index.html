@@ -4,122 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REY Calculation</title>
+    <title>Main Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>REY AVLT</h1>
-
-    <div id="container">
-        <div id="age-div">
-            <p>Enter the child's age: </p>
-            <input type="number" name="" id="age">
-            <p id="age-error">Invalid Age</p>
-        </div>
-        <div id="gender-div">
-            <p>Select the child's gender: </p>
-            <div>
-                <input type="radio" id="female" name="gender" value="female">Female
-                <input type="radio" id="male" name="gender" value="male">Male
-            </div>
-        </div>
-    </div>
-
-    <table id="scores">
-        <tr>
-            <th>Z ציון</th>
-            <th>סטיית תקן</th>
-            <th>ממוצע גיל</th>
-            <th>מס׳ מילים</th>
-            <th>משימה</th>
-        </tr>
-        <tr>
-            <td><span id="T1-scoreZ"></span></td>
-            <td><span id="T1-SD"></span></td>
-            <td><span id="T1-average"></span></td>
-            <td id="score1">
-                <input type="number" id="T1"> 
-                <p class="error" id="T1-error">Invalid Score</p>
-            </td>
-            <td>הקראה ראשונה</td>
-        </tr>
-        <tr>
-            <td><span id="T2-scoreZ"></span></td>
-            <td><span id="T2-SD"></span></td>
-            <td><span id="T2-average"></span></td>
-            <td id="score2">
-                <input type="number" id="T2">
-                <p class="error" id="T2-error">Invalid Score</p>
-            </td>
-            <td>הקראה שנייה</td>
-        </tr>
-        <tr>
-            <td><span id="T3-scoreZ"></span></td>
-            <td><span id="T3-SD"></span></td>
-            <td><span id="T3-average"></span></td>
-            <td id="score3">
-                <input type="number" id="T3">
-                <p class="error" id="T3-error">Invalid Score</p>
-            </td>
-            <td>הקראה שלישית</td>
-        </tr>
-        <tr>
-            <td><span id="T4-scoreZ"></span></td>
-            <td><span id="T4-SD"></span></td>
-            <td><span id="T4-average"></span></td>
-            <td id="score4">
-                <input type="number" id="T4">
-                <p class="error" id="T4-error">Invalid Score</p>
-            </td>
-            <td>הקראה רביעית</td>
-        </tr>
-        <tr>
-            <td><span id="T5-scoreZ"></span></td>
-            <td><span id="T5-SD"></span></td>
-            <td><span id="T5-average"></span></td>
-            <td id="score5">
-                <input type="number" id="T5">
-                <p class="error" id="T4-error">Invalid Score</p>
-            </td>
-            <td>הקראה חמישית</td>
-        </tr>
-        <tr>
-            <td><span id="T6-scoreZ"></span></td>
-            <td><span id="T6-SD"></span></td>
-            <td><span id="T6-average"></span></td>
-            <td id="score6">
-                <input type="number" id="T6">
-                <p class="error" id="T6-error">Invalid Score</p>
-            </td>
-            <td>רשימה חדשה</td>
-        </tr>
-        <tr>
-            <td><span id="T7-scoreZ"></span></td>
-            <td><span id="T7-SD"></span></td>
-            <td><span id="T7-average"></span></td>
-            <td id="score7">
-                <input type="number" id="T7">
-                <p class="error" id="T7-error">Invalid Score</p>
-            </td>
-            <td>זכירה מיידית</td>
-        </tr>
-        <tr>
-            <td><span id="T8-scoreZ"></span></td>
-            <td><span id="T8-SD"></span></td>
-            <td><span id="T8-average"></span></td>
-            <td id="score8">
-                <input type="number" id="T8">
-                <p class="error" id="T8-error">Invalid Score</p>
-            </td>
-            <td>זכירה מושהית</td>
-        </tr>
-    </table>
+    <h1>Choose Your Fighter</h1>
 
     <div id="buttons">
-        <input type="submit" onclick="calculate()">
-        <input type="button" value="Reset" onclick="refresh()">
-        <input type="button" value="Copy" onclick="copyTable('scores')">
+        <button onclick="AVLT()">AVLT</button>
+        <button onclick="RCFT()">RCFT</button>
     </div>
+
+    <img src="./assets/chaos.gif" id="fire" width="70%">
 
     <script src="script.js"></script>
 </body>

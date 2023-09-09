@@ -1,7 +1,10 @@
 #scores {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'David Libre', serif;
     border-collapse: collapse;
-    width: 50%;
+    width: 45%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
   
   #scores td, #scores th {
@@ -24,28 +27,33 @@
   }
 
   input[type=number], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    width: 80%;
+    padding: 8px 15px;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     box-sizing: border-box;
   }
   
-  input[type=submit], input[type=button] {
+  button {
     width: 35%;
     background-color: #0497aa;
     color: white;
     padding: 14px 20px;
     margin: 8px 8px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
   }
   
   input[type=submit]:hover, input[type=button]:hover {
     background-color: #47c3d3;
+  }
+
+  i {
+    margin-right: 5px;
   }
   
 #container {
@@ -98,4 +106,14 @@
 
   h1 {
     color: #0497aa;
+  }
+
+  #age-years, #age-months {
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  #fire {
+    margin-top: 3%;
   }
